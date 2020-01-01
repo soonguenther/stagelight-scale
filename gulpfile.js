@@ -1,162 +1,61 @@
-var gulp = require('gulp'),
-    sass = require('gulp-sass'),
-    autoprefixer = require('gulp-autoprefixer'),
-    njkRender = require('gulp-nunjucks-render'),
-    htmlPrettify = require('gulp-html-prettify'),
-    rtlcss = require('gulp-rtlcss'),
-    rename = require('gulp-rename');
+"use strict";
 
+// Load plugins
+const browsersync = require("browser-sync").create();
+const del = require("del");
+const gulp = require("gulp");
+const merge = require("merge-stream");
 
+// BrowserSync
+function browserSync(done) {
+  browsersync.init({
+    server: {
+      baseDir: "./"
+    },
+    port: 3000
+  });
+  done();
+}
 
-//
-// Main
-//
+// BrowserSync reload
+function browserSyncReload(done) {
+  browsersync.reload();
+  done();
+}
 
-gulp.task('sass-main', function () {
-  return gulp.src('./html/assets/include/scss/**/*.scss')
-    .pipe(sass({outputStyle: 'expanded'}))
-    .pipe(autoprefixer(['last 5 versions', '> 1%'], {cascade: true}))
-    .pipe(gulp.dest('./html/assets/css/'))
-});
+// Clean vendor
+function clean() {
+  return del(["./vendor/"]);
+}
 
-gulp.task('njk-main', function () {
-  return gulp.src('./html/assets/include/nunjucks/pages/**/*.njk')
-    .pipe(njkRender())
-    .pipe(htmlPrettify({
-      indent_size: 2
-    }))
-    .pipe(gulp.dest('./html/'));
-});
+// Bring third party dependencies from node_modules into vendor directory
+function modules() {
+  // Bootstrap
+  var bootstrap = gulp.src('./node_modules/bootstrap/dist/**/*')
+    .pipe(gulp.dest('./vendor/bootstrap'));
+  // jQuery
+  var jquery = gulp.src([
+      './node_modules/jquery/dist/*',
+      '!./node_modules/jquery/dist/core.js'
+    ])
+    .pipe(gulp.dest('./vendor/jquery'));
+  return merge(bootstrap, jquery);
+}
 
+// Watch files
+function watchFiles() {
+  gulp.watch("./**/*.css", browserSyncReload);
+  gulp.watch("./**/*.html", browserSyncReload);
+}
 
+// Define complex tasks
+const vendor = gulp.series(clean, modules);
+const build = gulp.series(vendor);
+const watch = gulp.series(build, gulp.parallel(watchFiles, browserSync));
 
-//
-// Admin
-//
-
-gulp.task('sass-admin', function () {
-  return gulp.src('./html/admin-template/assets/include/scss/**/*.scss')
-    .pipe(sass({outputStyle: 'expanded'}))
-    .pipe(autoprefixer(['last 5 versions', '> 1%'], {cascade: true}))
-    .pipe(gulp.dest('./html/admin-template/assets/css/'))
-});
-
-gulp.task('njk-admin', function () {
-  return gulp.src('./html/admin-template/assets/include/nunjucks/pages/**/*.njk')
-    .pipe(njkRender())
-    .pipe(htmlPrettify({
-      indent_size: 2
-    }))
-    .pipe(gulp.dest('./html/admin-template/'));
-});
-
-
-
-//
-// One Page
-//
-
-gulp.task('sass-op', function () {
-  return gulp.src('./html/one-pages/charity/assets/scss/**/*.scss')
-    .pipe(sass({outputStyle: 'expanded'}))
-    .pipe(autoprefixer(['last 5 versions', '> 1%'], {cascade: true}))
-    .pipe(gulp.dest('./html/one-pages/charity/assets/css/'))
-});
-
-gulp.task('sass-op-rtl', function () {
-  return gulp.src('./html/one-pages/charity/assets/scss/**/*.scss')
-    .pipe(sass({outputStyle: 'expanded'}))
-    .pipe(autoprefixer(['last 5 versions', '> 1%'], {cascade: true}))
-    .pipe(rtlcss())
-    .pipe(rename({ suffix: '-rtl' }))
-    .pipe(gulp.dest('./html/rtl/one-pages/charity/assets/css/'));
-});
-
-
-
-//
-// E-commerce
-//
-
-gulp.task('sass-ec', function () {
-  return gulp.src('./html/e-commerce/assets/scss/**/*.scss')
-    .pipe(sass({outputStyle: 'expanded'}))
-    .pipe(autoprefixer(['last 5 versions', '> 1%'], {cascade: true}))
-    .pipe(gulp.dest('./html/e-commerce/assets/css/'))
-});
-
-gulp.task('sass-ec-rtl', function () {
-  return gulp.src('./html/e-commerce/assets/scss/**/*.scss')
-    .pipe(sass({outputStyle: 'expanded'}))
-    .pipe(autoprefixer(['last 5 versions', '> 1%'], {cascade: true}))
-    .pipe(rtlcss())
-    .pipe(rename({ suffix: '-rtl' }))
-    .pipe(gulp.dest('./html/rtl/e-commerce/assets/css/'));
-});
-
-
-
-//
-// Multipages
-//
-
-gulp.task('sass-mp', function () {
-  return gulp.src('./html/multipage/marketing/assets/scss/**/*.scss')
-    .pipe(sass({outputStyle: 'expanded'}))
-    .pipe(autoprefixer(['last 5 versions', '> 1%'], {cascade: true}))
-    .pipe(gulp.dest('./html/multipage/marketing/assets/css/'))
-});
-
-gulp.task('sass-mp-rtl', function () {
-  return gulp.src('./html/multipage/marketing/assets/scss/**/*.scss')
-    .pipe(sass({outputStyle: 'expanded'}))
-    .pipe(autoprefixer(['last 5 versions', '> 1%'], {cascade: true}))
-    .pipe(rtlcss())
-    .pipe(rename({ suffix: '-rtl' }))
-    .pipe(gulp.dest('./html/rtl/multipage/marketing/assets/css/'));
-});
-
-
-
-//
-// Blog & Magazine
-//
-
-gulp.task('sass-bm', function () {
-  return gulp.src('./html/multipage/blog-magazine/classic/assets/scss/**/*.scss')
-    .pipe(sass({outputStyle: 'expanded'}))
-    .pipe(autoprefixer(['last 5 versions', '> 1%'], {cascade: true}))
-    .pipe(gulp.dest('./html/multipage/blog-magazine/classic/assets/css/'))
-});
-
-gulp.task('sass-bm-rtl', function () {
-  return gulp.src('./html/multipage/blog-magazine/classic/assets/scss/**/*.scss')
-    .pipe(sass({outputStyle: 'expanded'}))
-    .pipe(autoprefixer(['last 5 versions', '> 1%'], {cascade: true}))
-    .pipe(rtlcss())
-    .pipe(rename({ suffix: '-rtl' }))
-    .pipe(gulp.dest('./html/rtl/multipage/blog-magazine/classic/assets/css/'));
-});
-
-
-
-//
-// Watch
-//
-
-gulp.task('watch', function() {
-  gulp.watch(['./html/assets/include/scss/**/*.scss'], ['sass-main']);
-  gulp.watch('./html/assets/include/nunjucks/**/*.njk', ['njk-main']);
-
-  gulp.watch('./html/admin-template/assets/include/scss/**/*.scss', ['sass-admin']);
-  gulp.watch('./html/admin-template/assets/include/nunjucks/**/*.njk', ['njk-admin']);
-
-  gulp.watch('./html/multipage/marketing/assets/scss/**/*.scss', ['sass-mp']);
-
-  gulp.watch('./html/one-pages/charity/assets/scss/**/*.scss', ['sass-op']);
-
-  // gulp.watch(['./html/assets/include/scss/**/*.scss', './html/one-pages/accounting/assets/scss/**/*.scss'], ['sass-op']);
-  // gulp.watch(['./html/assets/include/scss/**/*.scss', './html/rtl/one-pages/accounting/assets/scss/**/*.scss'], ['sass-op-rtl']);
-});
-
-gulp.task('default', ['watch']);
+// Export tasks
+exports.clean = clean;
+exports.vendor = vendor;
+exports.build = build;
+exports.watch = watch;
+exports.default = build;
