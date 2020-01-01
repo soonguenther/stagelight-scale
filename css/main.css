@@ -1,0 +1,1591 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Titillium+Web:400,700&display=swap');
+
+html{
+    height: 100%;
+    overflow: hidden;
+  scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    perspective: 1px;
+	   background-color: white;
+    overflow-x: hidden;
+}
+
+blockquote {
+	font-size: .9em;
+	}
+
+ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+
+p {
+    padding:0;
+    margin:0;
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.containerMain {
+    max-width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    }
+
+.top_logo{
+	  position:absolute;
+    top:0px; 
+    left:482px; 
+    height:110px; 
+    width:133px; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+}
+
+.hero{
+
+    background-image: url("../images/SCALE_MVMT_HERO_SHOT_2650px.jpg");
+    height: 420px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.whitelogo{
+    width: 327px; 
+    height: 123px; 
+    position: relative; 
+    left:482px;
+    background-repeat: no-repeat; 
+    top:140px;
+}
+
+
+.orange_box{
+  width:327px; 
+  height:262px; 
+  background:#f5b531; 
+  position:relative; 
+  top:-140px; 
+  left:482px; 
+  float:left; 
+  display:table-cell; 
+  text-align:center; 
+}
+
+.orange_box .button{
+  width:80%;
+  height:69px; 
+  background: black;
+  position:relative; 
+  top:5%; 
+  margin:auto; 
+  display:grid; 
+  text-align:center; 
+  vertical-align: middle;
+}
+.orange_box .button .learnmore{    
+  color: white;  
+  cursor: pointer;
+  margin:auto; 
+  display:inline-block; 
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold; 
+  font-size: 2em; 
+  text-align: center;  
+}
+
+.orange_box .button .learnmore a,a:hover,a:visited{
+  text-decoration:none;
+  color: white;  
+  width:100%;
+  height:100%;
+}
+
+.orange_box .detail {
+  margin-top: 45px;
+  height: 180px;
+}
+
+.orange_box .date{
+  font-family: 'Roboto', sans-serif;
+  font-size:1.8em; 
+  text-align:center;
+  color:black;
+  font-weight:800;
+}
+.orange_box .date .days{
+  font-family: 'Libre Baskerville';
+  font-size:1.2em; 
+  text-align:center;
+  color:black;
+  font-weight:100;
+}
+.orange_box .venue{
+  font-family: 'Libre Baskerville';
+  font-size:1.7em; 
+  color: white; 
+  text-align:center;
+}
+
+.stylized{
+    margin: 5% auto;
+    width:700px;
+    font-family: 'Libre Baskerville';
+    font-size: 24px;  
+}
+.stylized input{
+    display: block;
+    font-size:24px;
+    padding:5px 4px;
+    border:solid 1px #4D4D4F;
+    width:700px;
+    
+}
+.slgandzappologos{
+    background-image: url(../images/slg_zap.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    float: left;
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    margin-left: 1300px;
+    padding-top:20px;
+}
+
+.stage_zap_logo{
+    padding-top:20px;
+    
+}
+.slgzap{
+    width:650px;
+}
+
+
+.bethemovement{
+  /* margin: 0px 5% 200px 390px; */
+  height: 50px;
+  padding-bottom:20px;
+}
+
+.lt_purple_box{
+    height: 1200px;
+    margin-top: 5px;
+    background-color: #a569a8;  
+  float: left;
+}
+
+.vl{
+    float: left;
+    border-left: .5em solid #F5B531;
+    margin: 50px 0 0 850px;
+    height:880px;
+}
+.columnr {
+  padding-left: 20px;
+  height: 100%;
+  width: 100%;
+ 
+}
+
+.s1{
+    display:inline;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10em;
+    font-weight: 800;
+    color: #f5b531;
+    padding:20px;    
+    padding-bottom: 0;
+    margin:10px;
+}
+.s2{
+    display:inline;
+    font-family: 'Roboto', sans-serif;
+    font-size: 5em;  
+    padding-bottom: 50px;
+    margin:0;
+}
+
+.s3{
+    font-family: 'Roboto', sans-serif;
+    font-weight:800;
+    width: 100%;
+    font-size: 3.5em;
+	  text-align: left;
+   margin-left: 100px;
+    padding: 80px 600px 80px 0;
+	  color: white;
+}
+
+.s4{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    width: 100%;
+	  text-align: left;
+    margin-left: 70px;
+	  color: white;
+    padding: 0 100px 80px 0;
+}
+
+}
+.clearfix{
+    clear:both
+}
+
+.white_box_text{
+    text-align: left;
+	  font-family: 'Roboto', sans-serif;
+ 	  color: #552C73;
+	  margin-top: 50px;
+    margin-left:400px;
+	  height: auto;
+
+}
+
+.yellow2_box{
+    position: relative;
+    cursor: pointer;
+	  width: 560px;
+	  height: 116px;
+    padding: 20px 0;
+	  font-family: 'Roboto', sans-serif;
+	  font-size: .4em;
+    text-align: center;
+	  background-color: #f5b531;
+	  margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.yellow2_text{
+   z-index: 8;
+	 font-family: 'Roboto', sans-serif;
+ 	 font-size: 7.5em;
+   font-weight: 800;
+   margin-left: 200px;
+ 	 color: #552c73;
+}
+
+.w_box_bot_text{
+    margin-left:1250px;
+    top: 150px;
+  	text-align: left;
+    font-family: 'Roboto', sans-serif;
+   	font-size: 120px;
+    font-weight:900;    
+ 	  color: #552c73;
+}
+
+.container4{
+    background-image: url("../images/transparent_logo.png");
+    background: contain;
+    background-repeat: no-repeat;
+    padding-bottom: 100px;
+}
+
+
+.wrapper{
+    padding-top: 1px;
+    height:2000px;
+  }
+
+.dr_purpe_box_top_text{
+    margin-left: 1250px;
+    margin-top: -65px;
+    font-family: 'Roboto', sans-serif;
+  	text-align: left;
+   	font-size: 120px;
+    font-weight:900;    
+    color: white;
+  }
+
+.dr_purple_text{
+    margin: 20px 0 20px 1250px;
+    padding: 0 50px 20px 0;
+}
+
+p.dpurpletitle{
+	  font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size: 2.5em;
+    color: #f5b531;
+  }
+
+
+p.dpurpletext{
+    padding-bottom: 10px;
+    padding-right: 50px;
+	  font-family: 'Libre Baskerville';
+    font-size: 2em;
+    color: white;
+}
+
+.white-area{
+  margin:10px;
+  height: 10%;
+}
+
+
+.event_grid{
+  display: grid;
+  grid-template-columns:auto auto auto;
+  grid-gap: 10px;
+    margin: 0px 0 20px 0;
+  padding: 0 10px 100px 0;
+}
+
+.event_grid > div{
+    text-align: center;
+    padding: 20px 0 100px 0;
+    margin:20px;
+}
+
+
+.wnumtitle{
+  margin-left:1px;
+  font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+  font-size: 10em;
+  color: #552c73;
+}
+
+.wnumtext{
+  font-family: 'Libre Baskerville';
+  font-size: .3em;
+  color: #552c73;
+}
+
+.savedatebox{
+    height: 1250px;
+    text-align: center;
+    background-color: #f5b531;
+	  color: white;
+
+}
+
+img.scale_purp{
+	margin: 152px auto 150px;
+  height: 366px;
+  width: 645px;
+}
+
+.bigtext{
+    float:inherit;
+    z-index: 20;
+	  font-family: 'Roboto', sans-serif;
+	  font-size: 18em;
+	  font-weight: bold;
+    position: relative;
+    margin-bottom: 10%;
+
+}
+
+.purbox{
+    width: 910px;
+    height: 406px;
+    padding: 80px;
+    margin: -128px auto 128px;
+    float: inherit;
+    text-align: center;
+    background-color: #552c73;
+}
+
+p.pboxlarge{
+    display: inline;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.5em;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+  }
+
+p.date{
+    display: inline;
+    padding: 10px;
+    font-family: 'Libre Baskerville';
+    font-size: 6em;
+	  font-weight: 100;
+	  color: white;
+    align-content: center;
+  }
+
+p.pboxsmall{
+    font-family: 'Libre Baskerville';
+    font-size: 3.4em;
+    color: white;
+    text-align: center;
+
+}
+
+.after_purple_box{
+    margin: 50px 825px ;
+}
+
+
+p.pscalemvmnt{
+  display: inline;
+  font-family: 'Roboto', sans-serif;
+  font-size: 3em;
+  font-weight: 800;
+  color: #552C73;
+}
+
+p.white_box_text_2{
+  display: inline;
+  font-family: 'Libre Baskerville';
+  font-size: 2.5em;
+
+}
+
+.form{
+  width: 60%;
+  height: 20em;
+  padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  text-align: left;
+  background-color: lightgreen:
+	color: black;
+}
+
+
+.purpleboxfooter{
+  width: auto;
+  background-color: #552c73;
+  color: white;
+
+}
+
+.white_scale_logo{
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.copyright{
+  margin:auto;
+  width:100%; 
+  text-align:center; 
+  padding-bottom:20px;
+}
+
+.social_links{
+  margin:auto; 
+  width:100; 
+  text-align:center;
+}
+
+.footer{
+    background-color: #552c73
+}
+
+input[type=text] {
+    display: block;
+    font-size:24px;
+    width: 100%;
+    padding: 15px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border:solid 1px #4D4D4F;
+}
+
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #F5B531;
+  border: none;
+  color: white;
+    width: 40%;
+    margin: 5% auto;
+  padding: 16px 32px;
+  text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+  cursor: pointer;
+}
+
+/*This is where Media queries start. I arranged all of the styles under each size query in descending order because you are using max-width, except for the very first with uses a range: min and max. You can compare what you are asking to change more clearly at each breakpoint. Also, I think there are way too many breakpoints. I recommend using only 4- 6 breakpoints. Comment groups of css out and run the site and see how it goes. */ 
+
+
+@media screen and (min-width: 600px) and (max-width: 1800px) {
+.wrapper{
+    padding-top: 1px;
+    height: 1800px;
+}
+}/*This range query may be causing you some issues, try commenting it out */
+
+@media screen and (min-width: 2074px) {
+.slgandzappologos{
+    margin-right: 100px;
+}
+  .bethemovement{
+  top:-40px;
+  margin: 150px auto 0 350px;
+    display: inline-block;}
+}
+
+@media screen and (max-width: 2074px) {
+.slgandzappologos{
+    margin-right: 100px;
+}
+  .bethemovement{
+  top:-40px;
+  margin: 150px auto 0 350px;
+  display: inline-block;
+}
+  .lt_purple_box{
+  margin-top: 60px;
+  height:1200px;  
+}
+  .vl{
+    border-left: .2em solid #F5B531;
+    margin-left: 800px;
+    height:1200px;
+}
+  .s3{
+    margin: 0px 0 0 40px;
+    font-size: 3em;
+    padding: 10px 100px 20px 40px;}
+  
+    .s4{
+      margin: 0px 0 0 40px;
+    padding-right: 100px;
+}
+  .white_box_text{
+    margin-left:200px;
+}
+  .yellow2_text{
+   font-size: 1.5em;
+    margin-left: 10px;
+}
+  .w_box_bot_text{
+    margin: 20px 0 0 100px;
+    font-size: 3em;
+}
+}
+@media screen and (max-width: 2057px) {
+.lt_purple_box{
+  margin-top: 80px;
+  height:600px;   
+}
+}
+
+@media screen and (max-width: 1957px) {
+.slgandzappologos{
+    margin-left: 1150px;
+}
+  .bethemovement{
+  top: -40px;
+  margin: 150px auto 0 150px;
+  display: inline-block;
+}
+}
+
+@media screen and (max-width: 1950px) {
+p.dpurpletext{
+    padding-right: 10%;
+}
+}
+
+@media screen and (max-width: 1920px) {
+.top_logo{
+    top: 0px; 
+    left: 8%; }
+    .whitelogo{
+    left: 8%;}
+  .orange_box{
+  left: 8%; 
+}
+  .slgandzappologos{
+    margin-left: 900px;
+}
+  .bethemovement{
+  top: -40px;
+  margin: 150px auto 0 0;
+  display: inline-block;
+}
+  .white_box_text{
+    margin-left:10%;
+}
+  .dr_purpe_box_top_text{
+    margin-left: 47%;
+  }
+  .dr_purple_text{
+    margin-left: 47%;
+}
+  .bigtext{
+  font-size: 18em;
+  margin-top: -100px;
+
+}
+}
+
+@media screen and (max-width: 1860px) {
+.slgandzappologos{
+    margin-left: 800px;
+}
+    .vl{
+    border-left: .2em solid #F5B531;
+    margin-left: 350px;
+    height:880px;
+  /*.s2{
+    font-size: 4em;*/
+}
+}
+
+@media screen and (max-width: 1841px) {
+/*.s2{
+    font-size: 3.1em; */
+}
+}
+
+/* @media screen and (max-width: 1491px) {
+.s2{
+    font-size: 2em;
+}
+}*/
+
+@media screen and (max-width: 1461px) {
+.slgandzappologos{
+    margin-left: 700px;
+}
+}
+
+@media screen and (max-width: 1440px) {
+
+  .lt_purple_box{
+  height:600px;  
+}
+  .vl{
+    border-left: .2em solid #F5B531;
+    margin-left: 350px;
+    height:880px;
+}
+.s2{
+    font-size: 3em;
+}
+  .s1{
+    font-size: 7em;
+}
+  .s3{
+    margin: 0px 0 0 40px;
+    font-size: 3em;
+    padding: 0 30px;
+}
+  .s4{
+    display: inline-block;
+    font-size: 2em;
+    text-align: left;
+    
+    margin: 30px 0 0 0;
+    padding: 0 100px 0 70px;
+}
+  .yellow2_text{
+   font-size: 3em;
+    margin-left: 10px;
+}
+  .w_box_bot_text{
+    margin: 20px 0 0 100px;
+    font-size: 3em;
+}
+}
+
+@media screen and (max-width: 1406px) {
+.slgandzappologos{
+    margin-left: 750px;
+}
+}
+
+@media screen and (max-width: 1240px) {
+.slgandzappologos{
+    margin-left: 750px;
+}
+  .bethemovement{
+  top: 0px;
+  margin: -100px auto 100px 300px;
+       display: inline-block;}
+  
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: relative;
+    right: 0;
+    top: 0;}
+    .top_logo{
+    top: 0px; 
+    left: 160px; }
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    display: inline-block;}
+  .hero{
+    background-image: url("../images/SCALE_MVMT_HERO_SHOT_600px.jpg");
+    width: 100%;
+    height:300px;
+}
+  .whitelogo{
+    width: 200px; 
+    left: 8%; 
+    top: 120px;
+    margin-bottom: 100px;
+}
+  .orange_box{
+  width:275px; 
+  height:260px; 
+  position:relative; 
+  top:-80px; 
+  left: 5%; 
+}
+  .orange_box .button{
+  width:206px;
+  height:56px; 
+  top:90px;
+}
+  .orange_box .button .learnmore{    
+  font-size: 1em; 
+}  
+  .orange_box .date{
+  font-size: .7em;
+  font-weight: 900;
+}
+  .orange_box .date .days{
+  font-size:2.5em; 
+  font-weight:100;
+}
+  .slgandzappologos{
+    margin-left: 400px;
+}
+  .stage_zap_logo{
+    padding-top:0;
+}
+  .s2{
+    font-size: 2em; 
+    margin-top: 5px;
+    width:10%;
+    float: top;
+}
+    .yellow2_box{
+    width: 220px;
+    height: 5px;
+    padding-top: 15px;
+    font-size: .5em;
+}
+.container4{
+    background-image: url("../images/transparent_logo.png");
+    background: contain;
+    background-repeat: no-repeat;
+    padding-bottom: 0;
+    width: 100%;
+}
+  .wrapper{
+    padding-top: 1px;
+    height: 1100px;
+}
+  p.dpurpletext{
+    margin-right: 20%;
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+  .event_grid{
+  display: grid;
+  grid-template-columns:auto auto auto;
+  grid-gap: 10px;
+    margin:20px;
+  padding: 0 10px;
+}
+  .dr_purpe_box_top_text{
+    margin-top: -25px;
+    margin-left: 45%;
+    font-size: 5em;
+  }
+  p.dpurpletitle{
+    margin-bottom: 0;
+    font-weight: 900;
+    padding-bottom: 0;
+    font-size: 1.3em;
+    color: #f5b531;
+  }
+  .dr_purple_text{
+    margin: 20px 0 20px 45%;
+    padding-bottom:20px;
+    padding-top: 0px;
+}
+  .container4{
+    background-image: url("../images/transparent_logo_1000.png");
+    background: contain;
+    background-repeat: no-repeat;
+    padding-bottom: 0;
+    width: 100%;
+}
+  .wnumtitle{
+  margin-left:1px;
+  font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+  font-size: 35px;
+  color: #552c73;
+}
+  .wnumtext{
+  font-family: 'Libre Baskerville';
+  font-size: 15px;
+  color: #552c73;
+}
+    .savedatebox{
+    min-height: 450px;
+    text-align: center;
+    background-color: #f5b531;
+  color: white;
+
+}
+p.pboxlarge{
+    display: inline;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+  }
+  .date{
+    display: inline;
+    padding: 10px;
+    font-family: 'Libre Baskerville';
+    font-size: 32px;
+  font-weight: bold;
+  color: white;
+    align-content: center;
+  }
+  .pboxsmall{
+    font-family: 'Libre Baskerville';
+    font-size: 20px;
+    padding-top: 40px;
+    color: white;
+    text-align: center;
+}
+  .stylized{
+    margin: 5% auto;
+    width:400px;
+    font-family: 'Libre Baskerville';
+    font-size: 20px;
+ }
+  .stylized input{
+    display: block;
+    font-size:24px;
+    padding:5px 4px;
+    border:solid 1px #4D4D4F;
+    width:400px;
+}  
+  input[type=text] {
+    display: block;
+    font-size:24px;
+    width: 100%;
+    padding: 15px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border:solid 1px #4D4D4F;
+}
+}
+
+@media screen and (max-width: 1024px) {
+   .bethemovement{
+  top: 0px;
+  margin: -100px auto 100px 300px;
+  display: inline-block;
+}
+  .hero{
+    background-image: url("../images/SCALE_MVMT_HERO_SHOT_600px.jpg");
+    height: 400px;
+}
+  .whitelogo{
+    width: 290px; 
+    left: 160px; 
+    top: 130px;
+    margin-bottom: 100px;} 
+  .orange_box{
+  width:260px; 
+  height:210px;
+  left: 160px;
+  top: -130px; 
+  margin-left: 0px;
+}
+  .orange_box .detail {
+    margin-top: 50px;}
+  .orange_box .venue{
+  font-size: 1.5em; }
+  .orange_box .button{
+  top:20px;}
+  .slgandzappologos{
+    margin-left: 550px;
+    height: 500px;
+    width: 350px;
+}
+
+  .s1{
+    font-size: 6em; 
+    padding: 5px;
+    margin-top: -100px;
+}
+  .lt_purple_box{
+  height:580px;
+    
+}
+  .vl{
+    border-left: .2em solid #F5B531;
+    margin-left: 350px;
+    height:580px;
+}
+  .s3{
+    margin: 100px 0 0 40px;
+    font-size: 1.7em;
+    padding: 0 30px;
+}
+  .s4{
+    display: inline-block;
+    font-size: 1.5em;
+    text-align: left;
+    width: 600px;
+    margin: 30px 0 0 0;
+    padding: 0 60px 0 70px;
+}
+  .white_box_text{
+    margin-left:0;
+    margin-top: 40px;
+}
+  .yellow2_text{
+   font-size: 1em;
+    margin-left: 10px;
+}
+  .w_box_bot_text{
+    margin: 20px 0 0 100px;
+    font-size: 3em;
+}
+  .event_grid{
+    display: grid;
+    grid-template-columns:auto auto;
+    grid-gap: 5px;
+    margin: -70px 0 0 0;
+    padding: 0 5px 10px 0;
+}
+}
+
+@media screen and (max-width: 1000px) {
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #F5B531;
+  border: none;
+  color: white;
+    width: 50%;
+    margin: 5% auto;
+  padding: 16px 32px;
+  text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+  cursor: pointer;
+}
+}
+
+@media screen and (max-width: 768px) {
+.top_logo{
+    left: 40px; 
+    height: 133px; 
+    width: 110px; }
+    .hero{
+    background-image: url("../images/SCALE_MVMT_HERO_SHOT_600px.jpg");
+    height: 324px;
+}
+  .whitelogo{
+    width: 260px; 
+    left: 40px; 
+    top: 130px;
+    margin-bottom: 100px;
+}
+  .orange_box{
+  width:260px; 
+  height:210px;
+  left: 40px;
+  top: -80px; 
+  margin-left: 0px;}
+  .orange_box .detail {
+    margin-top: 20px;}
+  .orange_box .venue{
+  font-size: 1.3em; }
+  .orange_box .button{
+  top:20px;}
+  .stage_zap_logo{
+    padding-top:0;
+    height:100%;
+    width: 100%;
+}
+  .slgandzappologos{
+    margin-left: 350px;
+    height: 500px;
+    width: 400px;
+}
+  .bethemovement{
+  top:-40px;
+  margin: 150px auto 0 -50px;
+  display: inline-block;
+}
+  .s1{
+    font-size: 5em; 
+    padding: 5px;
+    margin-top: -100px;
+}
+  p.s2{
+    font-size: 2em; 
+    padding:0;
+}
+  .lt_purple_box{
+  height:550px;   
+}
+  .vl{
+    border-left: .2em solid #F5B531;
+    margin-left: 250px;
+    height:500px;
+}
+  .columnr{
+  margin-left: 70px;
+  padding-left: 200px;
+}
+  .s3{
+    margin: 0px 0 0 40px;
+    font-size: 1.5em;
+    padding: 0 30px;
+}
+  .s4{
+
+    display: inline-block;
+    font-size: 1em;
+    text-align: left;
+    margin: 20px 0;
+    padding: 0 200px 0 70px;
+}
+  .w_box_bot_text{
+    margin: 20px 0 0 200px;
+    font-size: 2em;
+}
+  .yellow2_text{
+   font-size: 1em;
+    margin-left: 10px;
+}
+  .white_box_text{
+    margin-left:0;
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 600px) {
+.top_logo{
+    top: 0px; 
+    left: 41px; 
+    height: 103px; 
+    width: 85px; 
+}
+  .orange_box .date .days{
+  font-size:1em; 
+  font-weight:100;
+}
+  .orange_box .date{
+  font-size: 1.5em;
+  font-weight: 900;
+}
+  .container4{
+    background-image: url("../images/transparent_logo_600.png");
+    background: contain;
+    background-repeat: no-repeat;
+    padding-bottom: 0;
+    width: 100%;
+}
+    .dr_purpe_box_top_text{
+    margin-top: -40px;
+    margin-left: 100px;
+    font-size: 2em;
+  }
+.dr_purple_text{
+    margin-left: 75px;
+    font-size: 2.7em;
+    padding-bottom:0px;
+    padding-top: 0;
+}
+  p.dpurpletitle{
+    margin-bottom: 0;
+    font-weight: 900;
+    padding-bottom: 0;
+    font-size: .5em;
+    color: #f5b531;
+  }
+  p.dpurpletext{
+    margin-right: 0;
+    padding-bottom: 10px;
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+.top_logo{
+    left: 20px; 
+    height: 93px; 
+    width: 77px; }
+  .whitelogo{
+    width: 150px; 
+    left: 21px; 
+    top: 75px;
+    margin-bottom: 100px;
+}
+  .hero{
+    background-image: url("../images/SCALE_MVMT_HERO_SHOT_600px.jpg");
+    height: 250px;
+}
+  .orange_box{
+  width:150px; 
+  height:130px;
+  top: -100px; 
+    left: 21px; 
+  margin-left: 0;
+}
+  .orange_box .detail {
+    margin-top: 20px;
+}
+  .orange_box .venue{
+  font-size: .7em; 
+}
+  .orange_box .button{
+  top:20px;
+  width:130px;
+  height:35px; 
+}
+  .orange_box .button{
+  top:20px;
+}
+  .orange_box .date .days{
+  font-size:1em; 
+  font-weight:100;
+}
+  .orange_box .date{
+  font-size: .7em;
+  font-weight: 900;
+}
+  .slgandzappologos{
+    margin-left: 180px;
+    height: 100px;
+    width: 120px;
+}
+  .stage_zap_logo{
+    padding-top:0;
+    height:100%;
+    width: 100%;
+}
+  .bethemovement{
+  top:-80px;
+  margin: -20px auto 0 50px;
+  display: inline-block;
+}
+  .s1{
+    font-size: 2.7em; 
+    padding: 5px;
+    margin-top: -100px;
+}
+  p.s2{
+    font-size: .6em; 
+    padding:0;
+}
+  .lt_purple_box{
+  margin-top: -70px;
+  height:300px;   
+}
+  .vl{
+    border-left: .2em solid #F5B531;
+    margin: 0 0 0 -250px;
+    height:300px;
+}
+  .columnr{
+  margin-left: 70px;
+  padding-left: 20px;
+}
+  .s3{
+    margin: -35px 0 0 0;
+    font-size: .9em;
+    padding: 0;
+}
+  .s4{
+    display: inline-block;
+    font-size: .6em;
+    text-align: left;
+    margin: 20px 0;
+    padding: 0 200px 0 0;
+}
+  .white_box_text{
+    margin-left:0;
+    margin-top: 40px;
+}
+  .white_box_text{
+    margin-left:5px;
+    margin-top: 5px;
+  }
+  .yellow2_text{
+   font-size: 1.6em;
+    margin-left: 10px;
+}
+  .yellow2_box{
+    width: 200px;
+    height: 50px;
+    padding-top: 8px;
+    font-size: .7em;
+}
+  .w_box_bot_text{
+    margin: 20px 0 0 190px;
+    font-size: 3em;
+}
+  .dr_purple_text{
+    padding-right:0;
+    margin-left: 200px;
+}
+  p.dpurpletitle{
+    font-weight: 900;
+    font-size: .5em;
+  }
+  p.dpurpletext{
+    font-size: .3em;
+  }
+  .event_grid{
+    display: grid;
+    grid-template-columns:auto auto;
+    grid-gap: 5px;
+    margin: -70px 0 0 0;
+    padding: 0 5px 10px 0;
+}
+  .dr_purpe_box_top_text{
+    margin-top: -20px;
+    margin-left: 200px;
+    font-size: 3em;
+  }
+  .wnumtitle{
+  font-size: 3.5em;
+}
+  img.scale_purp{
+  height: 80px;
+}  
+  .bigtext{
+  font-size: 3em;
+}
+  .savedatebox{
+    height: 200px;
+}
+  .purbox{
+    height: 100px;
+    width:230px;
+    padding: 20px 0;
+    margin: -5% auto 20%;
+}
+  p.pboxlarge{
+    font-size: 1em;
+    color: white;
+    text-align: center;
+  }
+  p.date{
+    padding: 10px;
+    font-size: 1.3em;
+  }
+  p.pboxsmall{
+    font-size: 1em;
+    padding-top: 5px;
+}
+  .after_purple_box{
+    margin: 50px 100px;
+}
+  p.pscalemvmnt{
+  font-size: 1em;
+  font-weight: 800;
+}
+  .white_box_text_2{
+  font-size: .7em;
+}
+  .stylized{
+    width:300px;
+    font-size: 1em;
+ }
+  .white_scale_logo{
+  width: 425px;}
+  .social_links{
+  width:100%px; 
+  }
+  .copyright{
+  width:100%; 
+}
+  .purpleboxfooter{
+  width: 425px;
+}
+}
+
+@media screen and (max-width: 375px) {
+.orange_box{
+  width:150px; 
+  height:130px;
+  top: -100px; 
+    left: 21px; 
+  margin-left: 0;
+}
+  .copyright{
+  width:320px; 
+}
+  .social_links{
+  width:320px; 
+}
+  .white_scale_logo{
+  width: 375px;
+  margin: 0;
+}
+  .purpleboxfooter{
+  width: 100%;
+}
+  .orange_box .button{
+  top:20px;
+  width:130px;
+  height:35px; 
+}
+  .bethemovement{
+  top:-80px;
+  margin: -20px auto 0 50px;
+  display: inline-block;
+}
+  .s1{
+    font-size: 2.7em; 
+    padding: 5px;
+    margin-top: -100px;
+}
+  p.s2{
+    font-size: .6em; 
+    padding:0;
+}
+  .lt_purple_box{
+  margin-top: -70px;  
+}
+  .vl{
+    border-left: .2em solid #F5B531;
+    margin: -50px 0 0 60px;
+    height:300px;
+}
+  .columnr{
+  margin-left: 70px;
+  padding-left: 20px;
+}
+  .s3{
+    margin-top: -55px;
+    font-size: .9em;
+    padding-right: 10px;
+}
+  .s4{
+    display: inline-block;
+    font-size: .6em;
+    text-align: left;
+    margin-left: 0;
+    padding: 0 150px 0 0;
+}
+  .white_box_text{
+    margin-left:5px;
+    margin-top: 5px;
+  }
+  .yellow2_text{
+   font-size: 1.6em;
+    margin-left: 10px;
+}
+  .yellow2_box{
+    width: 200px;
+    height: 50px;
+    padding-top: 8px;
+    font-size: .5em;
+}
+  .w_box_bot_text{
+    margin: 20px 0 0 100px;
+    font-size: 3em;
+}
+  .dr_purpe_box_top_text{
+    margin-top: -40px;
+    margin-left: 100px;
+    font-size: 3em;
+  }
+  .dr_purple_text{
+    padding-right:0;
+    margin-left: 100px;
+}
+  p.dpurpletitle{
+    font-weight: 900;
+    font-size: .5em;
+  }
+  p.dpurpletext{
+    font-size: .2em;
+  }
+  .event_grid{
+    display: grid;
+    grid-template-columns:auto auto;
+    grid-gap: 5px;
+    margin: -70px 0 0 0;
+    padding: 0 5px 10px 0;
+}
+  .event_grid > div{
+    text-align: center;
+    padding: 5px 0;
+    margin:10px;
+}
+  .white-area{
+  margin:0;
+  height: 0;
+}
+  img.scale_purp{
+  margin: 152px auto 150px;
+  height: 99px;
+  width: 267px;
+}  
+  .bigtext{
+  font-size: 3em;
+}
+  .savedatebox{
+    height: 250px;
+}
+  .purbox{
+    height: 100px;
+    width:250px;
+    padding: 20px 0;
+    margin: -5% auto 20%;
+}
+  p.pboxlarge{
+    font-size: 1em;
+    color: white;
+    text-align: center;
+  }
+  p.date{
+    padding: 10px;
+    font-size: 1.3em;
+  }
+  p.pboxsmall{
+    font-size: 1em;
+    padding-top: 5px;
+}
+p.pscalemvmnt{
+  font-size: 1em;
+  font-weight: 800;
+}
+  .after_purple_box{
+    margin: 50px 50px ;
+}
+  p.white_box_text_2{
+  font-size: .9em;
+}
+  .stylized{
+    width:300px;
+    font-size: 1em;
+ }
+  .stylized input{
+    font-size:1em;
+    padding:5px 4px;
+    width:300px;
+}
+  input[type=button], input[type=submit], input[type=reset] {
+    width: 50%;
+    margin: 5% auto;
+  padding: 16px 32px;
+  text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+  cursor: pointer;
+}
+}
+
+@media screen and (max-width: 320px) {
+.top_logo{
+    left: 20px; 
+    height: 93px; 
+    width: 77px; }
+   .hero{
+    background-image: url("../images/SCALE_MVMT_HERO_SHOT_600px.jpg");
+    height: 250px;}
+  .whitelogo{
+    width: 150px; 
+    left: 21px; 
+    top: 75px;
+    margin-bottom: 100px;}
+  .orange_box{
+  width:150px; 
+  height:130px;
+  top: -100px; 
+    left: 21px; 
+  margin-left: 0;
+}
+  .orange_box .detail {
+    margin-top: 20px;
+}
+  .orange_box .venue{
+  font-size: .7em; 
+}
+  .orange_box .button{
+  top:20px;
+  width:130px;
+  height:35px; }
+  .bethemovement{
+  top:-80px;
+  margin: -20px auto 0 50px;
+  display: inline-block;
+}
+  .s1{
+    font-size: 2.7em; 
+    padding: 5px;
+    margin-top: -100px;
+}
+  p.s2{
+    font-size: .6em; 
+    padding:0;
+}
+    .s3{
+    margin-top: -55px;
+    font-size: .9em;
+    padding-right: 10px;
+}
+  .lt_purple_box{
+  margin-top: -70px;  
+}
+  .columnr{
+  padding-left: 30px;
+}
+  .yellow2_text{
+   font-size: 1.4em;
+    margin-left: 10px;
+}
+  .white_scale_logo{
+  width: 320px;
+  margin: 0;
+}
+}
+
+
+
+
+
+/*tablets, devices 600px and up 
+@media only screen and (min-width: 600px) {...}}
+
+/* Medium devices (landscape tablets, 768px and up) 
+@media only screen and (min-width: 768px) {...}}
+
+ Large devices (laptops/desktops, 992px and up) 
+@media only screen and (min-width: 992px) {...}}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) 
+@media only screen and (min-width: 1200px) {...}}*/
