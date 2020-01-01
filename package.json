@@ -1,0 +1,21 @@
+{
+  "name": "unify-2",
+  "version": "2.0.0",
+  "description": "Unify - Responsive Website Template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "HS",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-html-prettify": "0.0.1",
+    "gulp-nunjucks-render": "^2.2.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-rename": "^1.3.0",
+    "gulp-rtlcss": "^1.2.0",
+    "gulp-sourcemaps": "^2.6.4"
+  },
+  "devDependencies": {}
+}
