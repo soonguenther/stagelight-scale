@@ -1,2 +1,2 @@
 # stagelight-scale
-Stagelight Scale Website Redesign and cleanup for WSI
+Stagelight Scale website responsive rebuild and cleanup for WSI client
