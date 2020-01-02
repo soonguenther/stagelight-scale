@@ -61,6 +61,7 @@ header {
 
     background-image: url("../images/SCALE_MVMT_HERO_SHOT_2650px.jpg");
     height: 420px;
+    width: 100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;

@@ -8,13 +8,35 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Modern Business - Stagelight SCALE</title>
+  <title>Modern Business - STAGELIGHT SCALE</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="css/modern-business.css" rel="stylesheet">
+   <link rel="stylesheet" href="css/main.css">
+    <!-- CSS Global Icons -->
+    <link rel="stylesheet" href="css/hamburgers.min.css" />
+    <!-- CSS Unify -->
+    <link rel="stylesheet" href="css/unify.css" />
+  
+  <!-- JS Global Compulsory -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- JS Unify -->
+  <script src="js/hs.core.js"></script>
+  <script src="js/hs.hamburgers.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+      $(window).on('load', function () {
+          // initialization of header
+          $.HSCore.helpers.HSHamburgers.init('.hamburger');
+      });
+  </script>
 
 </head>
 
