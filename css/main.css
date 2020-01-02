@@ -48,7 +48,7 @@ header {
     }
 
 .top_logo{
-	  position:absolute;
+	 position:absolute;
     top:0px; 
     left:482px; 
     height:110px; 
@@ -58,7 +58,6 @@ header {
 }
 
 .hero{
-
     background-image: url("../images/SCALE_MVMT_HERO_SHOT_2650px.jpg");
     height: 420px;
     width: 100%;
@@ -82,11 +81,11 @@ header {
   width:327px; 
   height:262px; 
   background:#f5b531; 
-  position:relative; 
+  /*position:relative; */
   top:-140px; 
   left:482px; 
   float:left; 
-  display:table-cell; 
+  /*display:table-cell; */
   text-align:center; 
 }
 
@@ -163,12 +162,12 @@ header {
     background-image: url(../images/slg_zap.svg);
     background-size: contain;
     background-repeat: no-repeat;
-    position: absolute;
+    /*position: absolute; */
     float: left;
     width: 500px;
     height: 300px;
     text-align: center;
-    margin-left: 1300px;
+    margin-left: 100px;
     padding-top:20px;
 }
 
@@ -526,8 +525,8 @@ input[type=button], input[type=submit], input[type=reset] {
     font-weight: 400;
   cursor: pointer;
 }
-
-/*This is where Media queries start. I arranged all of the styles under each size query in descending order because you are using max-width, except for the very first with uses a range: min and max. You can compare what you are asking to change more clearly at each breakpoint. Also, I think there are way too many breakpoints. I recommend using only 4- 6 breakpoints. Comment groups of css out and run the site and see how it goes. */ 
+/*I'm going to comment out ALL Media Queries for now 
+This is where Media queries start. I arranged all of the styles under each size query in descending order because you are using max-width, except for the very first with uses a range: min and max. You can compare what you are asking to change more clearly at each breakpoint. Also, I think there are way too many breakpoints. I recommend using only 4- 6 breakpoints. Comment groups of css out and run the site and see how it goes. 
 
 
 @media screen and (min-width: 600px) and (max-width: 1800px) {
@@ -535,7 +534,7 @@ input[type=button], input[type=submit], input[type=reset] {
     padding-top: 1px;
     height: 1800px;
 }
-}/*This range query may be causing you some issues, try commenting it out */
+}
 
 @media screen and (min-width: 2074px) {
 .slgandzappologos{
@@ -651,22 +650,22 @@ p.dpurpletext{
     border-left: .2em solid #F5B531;
     margin-left: 350px;
     height:880px;
-  /*.s2{
-    font-size: 4em;*/
+  .s2{
+    font-size: 4em;
 }
 }
 
 @media screen and (max-width: 1841px) {
-/*.s2{
-    font-size: 3.1em; */
+.s2{
+    font-size: 3.1em; 
 }
 }
 
-/* @media screen and (max-width: 1491px) {
+@media screen and (max-width: 1491px) {
 .s2{
     font-size: 2em;
 }
-}*/
+}
 
 @media screen and (max-width: 1461px) {
 .slgandzappologos{
@@ -1575,7 +1574,7 @@ p.pscalemvmnt{
 }
 }
 
-
+*/ 
 
 
 
