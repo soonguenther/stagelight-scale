@@ -248,28 +248,28 @@ p.s2{
 
 }
 
-.yellow2_box{
-    position: relative;
+.yellow2_text{/*
+   z-index: 8;*/
+   font-family: 'Roboto', sans-serif;
+   font-size: 1.3em;
+   font-weight: 800;/*
+   margin-left: 200px;*/
+   color: #552c73;
+}
+
+.yellow2_box{/*
+    position: relative;*/
     cursor: pointer;/*
 	  width: 560px;
-	  height: 116px;*/
-    padding: 20px 0;/*
-	  font-family: 'Roboto', sans-serif;
-	  font-size: 1em;*/
+	  height: 116px;
+    padding: 20px 0;
+	  font-family: 'Roboto', sans-serif;*/
+	  font-size: .4em;
     text-align: center;
 	  background-color: #f5b531;/*
 	  margin-top: 20px;
     margin-bottom: 20px;*/
     color: white;
-}
-
-.yellow2_text{
-   z-index: 8;
-	 font-family: 'Roboto', sans-serif;
- 	 font-size: 4em;
-   font-weight: 800;/*
-   margin-left: 200px;*/
- 	 color: #552c73;
 }
 
 .w_box_bot_text{/*s*/
