@@ -48,9 +48,10 @@ header {
     }
 
 .top_logo{
-	 position:absolute;
-    top:0px; 
-    left:482px; 
+    position:absolute;
+    /*top:0px; 
+    left:482px; */
+    margin-top: 20px;
     height:110px; 
     width:133px; 
     background-repeat: no-repeat; 
@@ -67,11 +68,12 @@ header {
     background-size:cover;
 }
 
+
 .whitelogo{
-    width: 327px; 
-    height: 123px; 
+    width: 225px;
+    height: auto; 
     position: relative; 
-    left:482px;
+    margin-left: 4%;
     background-repeat: no-repeat; 
     top:140px;
 }
