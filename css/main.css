@@ -78,16 +78,16 @@ header {
     top:140px;
 }
 
-
 .orange_box{
   width:327px; 
   height:262px; 
   background:#f5b531; 
   /*position:relative; */
-  top:-140px; 
-  left:482px; 
+  margin-top:-140px;  
   float:left; 
-  /*display:table-cell; */
+  /*
+  left:482px;
+  display:table-cell; */
   text-align:center; 
 }
 
@@ -146,13 +146,13 @@ header {
   text-align:center;
 }
 .slgandzappologos{
-    background-image: url(../images/slg_zap.svg);
+    /* background-image: url(../images/slg_zap.svg);*/
     background-size: contain;
     background-repeat: no-repeat;
     /*position: absolute; */
     float: left;
-    width: 500px;
-    height: 300px;
+    /*width: 500px;
+    height: 300px; */
     text-align: center;
     margin-left: 100px;
     padding-top:20px;
