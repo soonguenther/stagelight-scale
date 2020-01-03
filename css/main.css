@@ -269,11 +269,12 @@ p.s2{
     color: white;
 }
 
-.w_box_bot_text{/*s*/
+.w_box_bot_text{/*
     top: 150px;
-  	text-align: left;
+  	text-align: left;*/
+    margin-top:30px;
     font-family: 'Roboto', sans-serif;
-   	font-size: 6em;
+   	font-size: 2.5em;
     font-weight:900;    
  	  color: #552c73;
 }
