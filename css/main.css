@@ -71,11 +71,12 @@ header {
 
 .whitelogo{
     width: 225px;
-    height: auto; 
+    height: auto;
+    margin-top: 150px; /*
     position: relative; 
-    margin-left: 4%;
-    background-repeat: no-repeat; 
-    top:140px;
+    margin-left: 4%;*/
+    background-repeat: no-repeat;/*
+    top:140px;*/
 }
 
 .orange_box{
