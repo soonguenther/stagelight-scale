@@ -49,13 +49,10 @@ header {
 
 .top_logo{
     position:absolute;
-    /*top:0px; 
-    left:482px; */
-    margin-top: 20px;
+    left:0px;
+    margin-top: 30px;
     height:110px; 
     width:133px; 
-    background-repeat: no-repeat; 
-    background-position: center; 
 }
 
 .hero{
@@ -75,29 +72,24 @@ header {
     margin-top: 150px; /*
     position: relative; 
     margin-left: 4%;*/
-    background-repeat: no-repeat;/*
-    top:140px;*/
+    background-repeat: no-repeat;
+  /*top:140px;*/
 }
 
 .orange_box{
   width:327px; 
-  height:262px; 
+  height:auto; 
   background:#f5b531; 
-  position:absolute;
-  margin-top:-100px; 
-  margin-right:20px;  
-  float:left; 
-  /*
-  left:482px;*/
-  
+  margin-top:50px; 
+padding-top: 15px;
+  left:20px; 
   text-align:center; 
 }
 
 .orange_box .button{
   width:80%;
   height:69px; 
-  background: black;
-  position:relative; 
+  background: black; 
   top:5%; 
   margin:auto; 
   display:grid; 
@@ -150,7 +142,7 @@ header {
 .slgandzappologos{
     /*position: absolute; 
     float: left;*/
-  width: 100%;
+  width: 600px;
     height: 300px; */
     text-align: center;
     padding-top:20px;
@@ -158,7 +150,7 @@ header {
 
 .stage_zap_logo{
     padding-top:20px;
-    
+     width:650px;
 }
 .slgzap{
     width:650px;
