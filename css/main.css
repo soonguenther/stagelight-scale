@@ -57,7 +57,7 @@ header {
 
 .hero{
     background-image: url("../images/SCALE_MVMT_HERO_SHOT_2650px.jpg");
-    height: 420px;
+    height: 450px;
     width: 100%;
     background-attachment: fixed;
     background-position: center;
@@ -67,20 +67,17 @@ header {
 
 
 .whitelogo{
-    width: 225px;
+  position: absolute;
+    width: 300px;
     height: auto;
-    margin-top: 150px; /*
-    position: relative; 
-    margin-left: 4%;*/
-    background-repeat: no-repeat;
-  /*top:140px;*/
+    top:220px; 
+  left: 30px;
 }
 
 .orange_box{
   width:327px; 
   height:250px; 
   background:#f5b531; 
-     
 padding-top: 15px;
   left:20px; 
   text-align:center; 
@@ -154,30 +151,32 @@ padding-top: 15px;
 .bethe{
   /* margin: 0px 5% 200px 390px; *//*
   height: 50px;*/
-  padding-bottom:20px;
+  margin-top:3.7%;
+  vertical-align: top;
 }
 .movement{
   /* margin: 0px 5% 200px 390px; *//*
   height: 50px;*/
-  padding-bottom:20px;
+
 }
 
 
 .s1{
-    display:inline;
     font-family: 'Roboto', sans-serif;
-    font-size: 100%;
+    font-size: 13vw;
     font-weight: 800;
     color: #f5b531;
-    padding:20px;    
+    padding-left: 10px;   
     padding-bottom: 0;/*
     margin:10px;*/
 }
-.s2{
-    display:inline;
+.s2{ 
     font-family: 'Roboto', sans-serif;
-    font-size: 100%;  
-    padding-bottom: 50px;/*
+   font-weight: 100;
+    font-size: 5vw;  
+    color: #000000;
+    padding-bottom: 20px;
+    padding-left:20px;/*
     margin:0;*/
 }
 
@@ -514,6 +513,30 @@ input[type=button], input[type=submit], input[type=reset] {
     font-weight: 400;
   cursor: pointer;
 }
+
+/* Media Queries */
+
+/* tablets, devices 600px and up 
+@media only screen and (min-width: 600px) {
+
+}*/
+
+Medium devices (landscape tablets, 768px and up) 
+@media only screen and (min-width: 768px){
+  .whitelogo{
+
+    top:220px; 
+  left: 100px;
+}
+  }
+
+ /*Large devices (laptops/desktops, 992px and up) 
+@media only screen and (min-width: 992px) {...}}*/
+
+/* Extra large devices (large laptops and desktops, 1200px and up) 
+@media only screen and (min-width: 1200px) {...}}*/
+
+
 /*I'm going to comment out ALL Media Queries for now 
 This is where Media queries start. I arranged all of the styles under each size query in descending order because you are using max-width, except for the very first with uses a range: min and max. You can compare what you are asking to change more clearly at each breakpoint. Also, I think there are way too many breakpoints. I recommend using only 4- 6 breakpoints. Comment groups of css out and run the site and see how it goes. 
 
@@ -1565,17 +1588,3 @@ p.pscalemvmnt{
 
 */ 
 
-
-tablets, devices 600px and up 
-@media only screen and (min-width: 600px) {
-
-}
-
-/* Medium devices (landscape tablets, 768px and up) 
-@media only screen and (min-width: 768px) {...}}
-
- Large devices (laptops/desktops, 992px and up) 
-@media only screen and (min-width: 992px) {...}}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) 
-@media only screen and (min-width: 1200px) {...}}*/
