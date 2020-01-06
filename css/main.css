@@ -51,7 +51,7 @@ header {
 
 .top_logo{
     position:absolute;
-    left:0px;
+    left:10px;
     margin-top: 30px;
     height:110px; 
     width:133px; 
@@ -72,7 +72,7 @@ header {
   position: absolute;
     width: 300px;
     height: auto;
-    top:220px; 
+    bottom:260px;
   left: 30px;
 }
 
@@ -165,7 +165,7 @@ padding-top: 15px;
 
 .s1{
     font-family: 'Roboto', sans-serif;
-    font-size: 13vw;
+    font-size: 9vw;
     font-weight: 800;
     color: #f5b531;
     padding-left: 10px;   
@@ -175,7 +175,7 @@ padding-top: 15px;
 .s2{ 
    font-family: 'Barlow Condensed', sans-serif;
    font-weight: 100;
-    font-size: 5vw;  
+    font-size: 4vw;  
     color: #000000;
     padding-bottom: 20px;
     padding-left:20px;/*
@@ -525,10 +525,7 @@ input[type=button], input[type=submit], input[type=reset] {
 
 Medium devices (landscape tablets, 768px and up) 
 @media only screen and (min-width: 768px){
-  .whitelogo{
-    top:220px; 
-  left: 100px;
-}
+
   }
 
  /*Large devices (laptops/desktops, 992px and up) 
