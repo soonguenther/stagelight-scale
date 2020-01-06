@@ -49,13 +49,10 @@ header {
 
 .top_logo{
     position:absolute;
-    /*top:0px; 
-    left:482px; */
-    margin-top: 20px;
+    left:0px;
+    margin-top: 30px;
     height:110px; 
     width:133px; 
-    background-repeat: no-repeat; 
-    background-position: center; 
 }
 
 .hero{
@@ -75,30 +72,26 @@ header {
     margin-top: 150px; /*
     position: relative; 
     margin-left: 4%;*/
-    background-repeat: no-repeat;/*
-    top:140px;*/
+    background-repeat: no-repeat;
+  /*top:140px;*/
 }
 
 .orange_box{
   width:327px; 
-  height:262px; 
+  height:250px; 
   background:#f5b531; 
-  /*position:relative; */
-  margin-top:-140px;  
-  float:left; 
-  /*
-  left:482px;
-  display:table-cell; */
+     
+padding-top: 15px;
+  left:20px; 
   text-align:center; 
 }
 
 .orange_box .button{
   width:80%;
   height:69px; 
-  background: black;
-  position:relative; 
+  background: black; 
   top:5%; 
-  margin:auto; 
+  margin: 20px auto; 
   display:grid; 
   text-align:center; 
   vertical-align: middle;
@@ -122,8 +115,9 @@ header {
 }
 
 .orange_box .detail {
+
   margin-top: 45px;
-  height: 180px;
+  height: auto;
 }
 
 .orange_box .date{
@@ -147,26 +141,15 @@ header {
   text-align:center;
 }
 .slgandzappologos{
-    /* background-image: url(../images/slg_zap.svg);*/
-    background-size: contain;
-    background-repeat: no-repeat;
-    /*position: absolute; */
-    float: left;
-    /*width: 500px;
-    height: 300px; */
-    text-align: center;
-    margin-left: 100px;
-    padding-top:20px;
+    /*position: absolute; 
+    float: left;*/
+  margin-left: auto;
+  margin-right: auto;
+  padding:10px;
+  width: 100%;
+    height: auto;
+    text-align: center;  
 }
-
-.stage_zap_logo{
-    padding-top:20px;
-    
-}
-.slgzap{
-    width:650px;
-}
-
 
 .bethemovement{
   /* margin: 0px 5% 200px 390px; *//*
@@ -324,11 +307,11 @@ p.dpurpletext{
     font-size: 1em;
     color: white;
 }
-/*
+
 .white-area{
   margin:10px;
   height: 10%;
-}*/
+}
 
 
 .event_grid{
@@ -468,10 +451,8 @@ p.white_box_text_2{
     font-size:24px;
     padding:5px 4px;
     border:solid 1px #4D4D4F;/*
-    width:700px;*/
-    
+    width:700px;*/   
 }
-
 
 .purpleboxfooter{
   width: auto;
@@ -1579,9 +1560,10 @@ p.pscalemvmnt{
 */ 
 
 
+tablets, devices 600px and up 
+@media only screen and (min-width: 600px) {
 
-/*tablets, devices 600px and up 
-@media only screen and (min-width: 600px) {...}}
+}
 
 /* Medium devices (landscape tablets, 768px and up) 
 @media only screen and (min-width: 768px) {...}}
