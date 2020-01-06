@@ -166,7 +166,7 @@ padding-top: 15px;
 .s1{
     display:inline;
     font-family: 'Roboto', sans-serif;
-    font-size: 7em;
+    font-size: 100%;
     font-weight: 800;
     color: #f5b531;
     padding:20px;    
@@ -176,7 +176,7 @@ padding-top: 15px;
 .s2{
     display:inline;
     font-family: 'Roboto', sans-serif;
-    font-size: 3em;  
+    font-size: 100%;  
     padding-bottom: 50px;/*
     margin:0;*/
 }
