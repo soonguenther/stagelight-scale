@@ -151,11 +151,17 @@ padding-top: 15px;
     text-align: center;  
 }
 
-.bethemovement{
+.bethe{
   /* margin: 0px 5% 200px 390px; *//*
   height: 50px;*/
   padding-bottom:20px;
 }
+.movement{
+  /* margin: 0px 5% 200px 390px; *//*
+  height: 50px;*/
+  padding-bottom:20px;
+}
+
 
 .s1{
     display:inline;
