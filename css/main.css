@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Titillium+Web:400,700&display=swap');
 
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed&display=swap');
+
 html{
     height: 100%;
     overflow: hidden;
@@ -171,7 +173,7 @@ padding-top: 15px;
     margin:10px;*/
 }
 .s2{ 
-    font-family: 'Roboto', sans-serif;
+   font-family: 'Barlow Condensed', sans-serif;
    font-weight: 100;
     font-size: 5vw;  
     color: #000000;
@@ -524,7 +526,6 @@ input[type=button], input[type=submit], input[type=reset] {
 Medium devices (landscape tablets, 768px and up) 
 @media only screen and (min-width: 768px){
   .whitelogo{
-
     top:220px; 
   left: 100px;
 }
