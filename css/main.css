@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Titillium+Web:400,700&display=swap');
 
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed&display=swap');
+
 html{
     height: 100%;
     overflow: hidden;
@@ -49,7 +51,7 @@ header {
 
 .top_logo{
     position:absolute;
-    left:0px;
+    left:10px;
     margin-top: 30px;
     height:110px; 
     width:133px; 
@@ -57,7 +59,7 @@ header {
 
 .hero{
     background-image: url("../images/SCALE_MVMT_HERO_SHOT_2650px.jpg");
-    height: 420px;
+    height: 450px;
     width: 100%;
     background-attachment: fixed;
     background-position: center;
@@ -67,20 +69,17 @@ header {
 
 
 .whitelogo{
-    width: 225px;
+  position: absolute;
+    width: 300px;
     height: auto;
-    margin-top: 150px; /*
-    position: relative; 
-    margin-left: 4%;*/
-    background-repeat: no-repeat;
-  /*top:140px;*/
+    bottom:260px;
+  left: 30px;
 }
 
 .orange_box{
   width:327px; 
   height:250px; 
   background:#f5b531; 
-     
 padding-top: 15px;
   left:20px; 
   text-align:center; 
@@ -151,27 +150,35 @@ padding-top: 15px;
     text-align: center;  
 }
 
-.bethemovement{
+.bethe{
   /* margin: 0px 5% 200px 390px; *//*
   height: 50px;*/
-  padding-bottom:20px;
+  margin-top:3.7%;
+  vertical-align: top;
+}
+.movement{
+  /* margin: 0px 5% 200px 390px; *//*
+  height: 50px;*/
+
 }
 
-p.s1{
-    display:inline;
+
+.s1{
     font-family: 'Roboto', sans-serif;
-    font-size: 7em;
+    font-size: 9vw;
     font-weight: 800;
     color: #f5b531;
-    padding:20px;    
+    padding-left: 10px;   
     padding-bottom: 0;/*
     margin:10px;*/
 }
-p.s2{
-    display:inline;
-    font-family: 'Roboto', sans-serif;
-    font-size: 3em;  
-    padding-bottom: 50px;/*
+.s2{ 
+   font-family: 'Barlow Condensed', sans-serif;
+   font-weight: 100;
+    font-size: 4vw;  
+    color: #000000;
+    padding-bottom: 20px;
+    padding-left:20px;/*
     margin:0;*/
 }
 
@@ -505,6 +512,26 @@ input[type=button], input[type=submit], input[type=reset] {
     font-weight: 400;
   cursor: pointer;
 }
+
+/* Media Queries */
+
+/* tablets, devices 600px and up 
+@media only screen and (min-width: 600px) {
+
+}*/
+
+Medium devices (landscape tablets, 768px and up) 
+@media only screen and (min-width: 768px){
+
+  }
+
+ /*Large devices (laptops/desktops, 992px and up) 
+@media only screen and (min-width: 992px) {...}}*/
+
+/* Extra large devices (large laptops and desktops, 1200px and up) 
+@media only screen and (min-width: 1200px) {...}}*/
+
+
 /*I'm going to comment out ALL Media Queries for now 
 This is where Media queries start. I arranged all of the styles under each size query in descending order because you are using max-width, except for the very first with uses a range: min and max. You can compare what you are asking to change more clearly at each breakpoint. Also, I think there are way too many breakpoints. I recommend using only 4- 6 breakpoints. Comment groups of css out and run the site and see how it goes. 
 
@@ -1556,17 +1583,3 @@ p.pscalemvmnt{
 
 */ 
 
-
-tablets, devices 600px and up 
-@media only screen and (min-width: 600px) {
-
-}
-
-/* Medium devices (landscape tablets, 768px and up) 
-@media only screen and (min-width: 768px) {...}}
-
- Large devices (laptops/desktops, 992px and up) 
-@media only screen and (min-width: 992px) {...}}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) 
-@media only screen and (min-width: 1200px) {...}}*/

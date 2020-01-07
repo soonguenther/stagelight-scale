@@ -7,6 +7,10 @@ body {
   padding-top: 56px;
 }
 
+container-fluid{
+  max-width: 1200px;
+}
+
 .carousel-item {
   height: 65vh;
   min-height: 300px;
