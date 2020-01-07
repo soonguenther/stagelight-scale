@@ -264,8 +264,10 @@ p.s2{
 
 .purple_box_top{
     background-image: url("../images/transparent_logo.png");
-    background:cover;
-    background-repeat: no-repeat;/*
+    display:block;
+    max-width: 100%;
+    height:auto;
+    /*
     padding-bottom: 100px;*/
 }
 /*
@@ -278,15 +280,14 @@ p.s2{
     margin-left: 1250px;
     margin-top: -65px;*/
     font-family: 'Roboto', sans-serif;
-  	text-align: left;
    	font-size: 2.5em;
     font-weight:900;    
     color: black;
   }
 
 .dr_purple_text{/*
-    margin: 20px 0 20px 1250px;*/
-    padding: 0 50px 20px 0;
+    margin: 20px 0 20px 1250px;
+    padding: 0 50px 20px 0;*/
 }
 
 p.dpurpletitle{
@@ -299,7 +300,7 @@ p.dpurpletitle{
 
 p.dpurpletext{
     padding-bottom: 10px;
-    padding-right: 50px;
+    padding-right: 20px;
 	  font-family: 'Libre Baskerville';
     font-size: 1em;
     color: white;
